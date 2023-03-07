@@ -23,6 +23,7 @@ public class Challenge1 {
             if (sortedArray[i] > k) break;
             for (int j =i+1; j<sortedArray.length; j++){
                 if (sortedArray[i] + sortedArray[j] == k) return true;
+                else if (sortedArray[i] + sortedArray[j] > k) break;
             }
         }
         return result;
