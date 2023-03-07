@@ -27,6 +27,4 @@ public class Challenge1 {
         }
         return result;
     }
-
-
 }
