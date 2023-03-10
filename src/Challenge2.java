@@ -9,5 +9,26 @@ Follow-up: what if you can't use division?
 
 public class Challenge2 {
 
+    public static void main(String[] args) {
+
+        int[] test = {1,2,3,4,5};
+
+    }
+
+    public static int[] computeWithDivision(int[] inputArray) {
+        int sumOfAllProducts = 1;
+        int[] result = new int[inputArray.length];
+
+        for (int j : inputArray) {
+            sumOfAllProducts *= j;
+        }
+        for (int i = 0; i < inputArray.length; i++){
+            result[i] = sumOfAllProducts/inputArray[i];
+        }
+        return result;
+    }
+
+
+
 
 }
